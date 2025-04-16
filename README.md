@@ -70,3 +70,21 @@ Uvicorn – Servidor ASGI para correr la API.
 Docker (opcional) – Para contenerizar la aplicación.
 
 Pytest (opcional) – Para pruebas unitarias.
+
+### Instalación y ejecución local
+
+# CLONE
+```
+git clone https://github.com/tu-usuario/globant-data-challenge.git
+cd globant-data-challenge
+```
+# Crear entorno virtual e instalar dependencias:
+```
+python -m venv env
+source env/bin/activate  # En Windows: env\Scripts\activate
+pip install -r requirements.txt
+```
+# Ejecutar API
+```
+uvicorn app.main:app --reload
+```
