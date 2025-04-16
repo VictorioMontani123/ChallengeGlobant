@@ -24,8 +24,8 @@ Este proyecto es una solución al desafío de Data Engineering propuesto por Glo
 - `/files/`: Carpeta con los archivos CSV entregados.
 - `requirements.txt`: Dependencias del proyecto.
 - `README.md`: Este archivo.
-- `Dockerfile` (opcional).
-- `/test/` (opcional): Tests unitarios.
+- `Dockerfile`
+- `/test/`: Tests unitarios.
 
 ---
 
