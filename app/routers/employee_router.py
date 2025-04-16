@@ -13,7 +13,7 @@ async def load_employees(csv_file: UploadFile = File(...),db: Session = Depends(
     result = load_employees_from_csv(contents, db)
     return result
 
-@router.post("/employees/batch")
+@router.post("/batch")
 async def insert_employees_endpoint(csv_file: UploadFile = File(...),batch_size: int = Query(1000, gt=0),db: Session = Depends(get_db)):
     try:
         contents = await csv_file.read()
@@ -25,7 +25,7 @@ async def insert_employees_endpoint(csv_file: UploadFile = File(...),batch_size:
         raise HTTPException(status_code=500, detail="Internal Server Error")
 
 # Endpoint para obtener todos los employees
-@router.get("/get_employees", tags=["Employees"])
+@router.get("/list")
 def get_employees_list(db: Session = Depends(get_db), skip: int = 0, limit: int = 100):
     employees = get_employees(db, skip=skip, limit=limit)
     return employees

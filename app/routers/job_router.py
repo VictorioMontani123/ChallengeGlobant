@@ -13,6 +13,6 @@ async def load_jobs(csv_file: UploadFile = File(...), db: Session = Depends(get_
 
 
 # Endpoint para obtener todos los jobs
-@router.get("/get_jobs")
+@router.get("/list")
 def get_jobs_list(db: Session = Depends(get_db)):
     return get_jobs(db)

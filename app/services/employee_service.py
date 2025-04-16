@@ -4,7 +4,6 @@ from datetime import datetime
 from sqlalchemy import text
 from app.models.employee_model import Employee
 from sqlalchemy.orm import Session
-from app.schemas.employee_schema import EmployeeCreate
 from sqlalchemy.exc import IntegrityError, SQLAlchemyError
 import math
 from app.sql.employee_queries import get_employees_per_quarter_query, get_departments_above_average
