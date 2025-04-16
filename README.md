@@ -7,11 +7,20 @@ Este proyecto es una solución al desafío de Data Engineering propuesto por Glo
 # Estructura de archivos de la API
 
 - `/app/`
-  - `main.py`: Archivo principal con los endpoints de la API.
+  - `main.py`: Archivo principal.
+  - `routers/`
+    - `department_router.py`:
+    - `employee_router.py`: .
+    - `job_router.py`: .
+  - `services/`
+    - `department_service.py`:
+    - `employee_service.py`: .
+    - `job_service.py`: .
   - `models/`
     - `base.py`: Define el `Base` de SQLAlchemy.
     - `models.py`: Contiene los modelos `Department`, `Job` y `HiredEmployee`.
-  - `services/`: Lógica para carga de CSV y consultas SQL.
+  - `sql/`
+   - `employee_queries` 
 - `/files/`: Carpeta con los archivos CSV entregados.
 - `requirements.txt`: Dependencias del proyecto.
 - `README.md`: Este archivo.
