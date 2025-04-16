@@ -4,7 +4,7 @@ Este proyecto es una solución al desafío de Data Engineering propuesto por Glo
 
 ---
 
-## 📁 Estructura de archivos
+# Estructura de archivos de la API
 
 - `/app/`
   - `main.py`: Archivo principal con los endpoints de la API.
@@ -20,7 +20,7 @@ Este proyecto es una solución al desafío de Data Engineering propuesto por Glo
 
 ---
 
-## 🧪 Archivos CSV
+# Estructura de archivos CSV
 
 El desafío proporciona tres archivos CSV con las siguientes estructuras:
 
@@ -38,7 +38,7 @@ El desafío proporciona tres archivos CSV con las siguientes estructuras:
 
 ---
 
-## 🚀 Funcionalidades
+# Funcionalidades
 
 ### 1. API REST para carga de CSVs
 
@@ -56,7 +56,7 @@ curl -X POST -F "file=@data/departments.csv" http://localhost:8000/upload_csv/de
 ```
 
 
-### 🧱 Tecnologías utilizadas
+# Tecnologías utilizadas
 Python 3.10+
 
 FastAPI – Framework web para construir la API.
@@ -71,20 +71,20 @@ Docker (opcional) – Para contenerizar la aplicación.
 
 Pytest (opcional) – Para pruebas unitarias.
 
-### Instalación y ejecución local
+# Instalación y ejecución local
 
-# CLONE
+## CLONE
 ```
 git clone https://github.com/tu-usuario/globant-data-challenge.git
 cd globant-data-challenge
 ```
-# Crear entorno virtual e instalar dependencias:
+## Crear entorno virtual e instalar dependencias:
 ```
 python -m venv env
 source env/bin/activate  # En Windows: env\Scripts\activate
 pip install -r requirements.txt
 ```
-# Ejecutar API
+## Ejecutar API
 ```
 uvicorn app.main:app --reload
 ```
