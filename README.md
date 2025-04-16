@@ -53,10 +53,10 @@ Permite subir los archivos CSV y guardarlos en una base de datos SQL utilizando 
 
 ```bash
 curl -X POST -F "file=@data/departments.csv" http://localhost:8000/upload_csv/departments
+```
 
 
-
-🧱 Tecnologías utilizadas
+### 🧱 Tecnologías utilizadas
 Python 3.10+
 
 FastAPI – Framework web para construir la API.
