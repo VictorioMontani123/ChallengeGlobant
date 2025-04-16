@@ -20,7 +20,7 @@ Este proyecto es una solución al desafío de Data Engineering propuesto por Glo
     - `base.py`: Define el `Base` de SQLAlchemy.
     - `models.py`: Contiene los modelos `Department`, `Job` y `HiredEmployee`.
   - `sql/`
-   - `employee_queries` 
+    - `employee_queries` 
 - `/files/`: Carpeta con los archivos CSV entregados.
 - `requirements.txt`: Dependencias del proyecto.
 - `README.md`: Este archivo.
