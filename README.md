@@ -76,9 +76,9 @@ SQLite (o PostgreSQL) – Motor de base de datos.
 
 Uvicorn – Servidor ASGI para correr la API.
 
-Docker (opcional) – Para contenerizar la aplicación.
+Docker – Para contenerizar la aplicación.
 
-Pytest (opcional) – Para pruebas unitarias.
+Pytest – Para pruebas unitarias.
 
 # Instalación y ejecución local
 
